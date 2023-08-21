@@ -1,0 +1,172 @@
+// .admin-user {
+//     .last-ip, .registration-ip {
+//         display: none;
+//     }
+// }
+
+// do not show banner for logged-in users
+#banner {
+    display: none;
+}
+.anon #banner {
+    display: block;
+}
+
+#sidebar-section-content-categories,
+#sidebar-section-content-tags {
+    display: flex;
+    flex-direction: column;
+    li:last-child {
+        order: -1;
+    }
+}
+
+
+// .custom-header-links {
+//      font-size:8px;
+// }
+
+
+// .anon {
+//   .学习资料-custom-header-links {
+//     display: none;
+//   }
+// }
+
+// .anon {
+//   .學資-custom-header-links {
+//     display: none;
+//   }
+// }
+
+.學資-custom-header-links {
+    text-align:  justify;
+    overflow: hidden;
+    font-size: smaller;
+    white-space: nowrap;
+}
+
+.課評-custom-header-links {
+    text-align:  justify;
+    overflow: hidden;
+font-size: smaller;
+    white-space: nowrap;
+}
+
+
+
+// --> start
+// Line numbering in code blocks
+// https://meta.discourse.org/t/is-it-possible-to-show-line-numbers-in-code-block/204178/5
+
+pre.lines-decorator code.lines-decorator span.lines-line {
+  &::before {
+    // Docker theme uses non-default content-box
+    box-sizing: content-box;
+  }
+}
+
+pre.lines-decorator {
+  --lines-bgcolor: var(--hljs-bg);
+  --lines-number-width: 2em;
+  --lines-number-padding-to-right-border: .5em;
+  --lines-shadow-width: .8em;
+  --lines-shadow-color: rgba(0, 0, 0, .15);
+  // No padding for outer PRE:
+  // - scrollbars not covering CODE but close to outermost edges
+  // - text close to the edges when there is hidden content
+  // - likewise for the shadows
+  padding: 0;
+  // #f5f5f5 in `code.less`
+  background-color: var(--lines-bgcolor);
+}
+
+code.lines-decorator {
+  padding: 1.5em;
+
+  &.lines-wrap {
+    white-space: pre-wrap;
+
+    &:not(.lines-count-1) {
+      span.lines-line {
+        display: inline-block;
+        position: relative;
+        padding-left: 3em;
+      }
+    }
+  }
+
+  &.lines-scroll {
+    white-space: pre;
+
+    span.lines-line {
+      padding-right: 1.5em;
+
+      &::before {
+        position: sticky;
+        left: 0;
+      }
+    }
+  }
+
+  &.lines-wrap span.lines-line {
+    // Minimum height to get border and background for empty lines (Firefox
+    // only needs this for the ::before, but Chrome also for the span)
+    min-height: 1.5em;
+
+    &::before {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &.lines-shadow {
+    background-image:
+      // First two solid covers that scroll with the content, appearing
+      // in front of the shadows when no scrolling possible, matching
+      // background color (not perfect while scrolling the first pixels)
+      linear-gradient(to right, var(--lines-bgcolor), var(--lines-bgcolor)),
+      linear-gradient(to right, var(--lines-bgcolor), var(--lines-bgcolor)),
+      // ...and behind that two shadows at fixed positions, to indicate
+      // scrollable, hidden content if not covered
+      linear-gradient(to right, var(--lines-shadow-color), var(--lines-bgcolor)),
+      linear-gradient(to left, var(--lines-shadow-color), var(--lines-bgcolor));
+
+    --shadow-left: 0;
+
+    &.lines-number:not(.lines-count-1):not(.lines-in-quote) {
+      // If line number are visible, we need to move the shadow
+      --shadow-left: calc(var(--lines-number-width) + var(--lines-number-padding-to-right-border));
+    }
+
+    background-position: var(--shadow-left) center, right center, var(--shadow-left) center, right center;
+
+    background-attachment: local, local, scroll, scroll;
+    background-repeat: no-repeat;
+    background-size: var(--lines-shadow-width) 100%, var(--lines-shadow-width) 100%,
+    var(--lines-shadow-width) 100%, var(--lines-shadow-width) 100%;
+  }
+
+  &.lines-number:not(.lines-count-1):not(.lines-in-quote) {
+    padding-left: 0;
+    counter-reset: line-numbering;
+
+    span.lines-line::before {
+      display: inline-block;
+      content: counter(line-numbering);
+      counter-increment: line-numbering;
+      border-right: 1px solid #ccc;
+      width: var(--lines-number-width);
+      padding-right: var(--lines-number-padding-to-right-border);
+      margin-right: .5em;
+      height: 100%;
+      text-align: right;
+      font-family: var(--font-family);
+      color: var(--primary-medium);
+      background-color: var(--lines-bgcolor);
+    }
+  }
+}
+
+// --> end
+// Line numbering in code blocks
