@@ -55,8 +55,7 @@ font-size: smaller;
 
 
 
-// --> start
-// Line numbering in code blocks
+/// --> start: Line numbering in code blocks
 // https://meta.discourse.org/t/is-it-possible-to-show-line-numbers-in-code-block/204178/5
 
 pre.lines-decorator code.lines-decorator span.lines-line {
@@ -168,5 +167,30 @@ code.lines-decorator {
   }
 }
 
-// --> end
-// Line numbering in code blocks
+/// --> end: Line numbering in code blocks
+
+/// --> start: Intel One Mono for code blocks
+// https://meta.discourse.org/t/include-assets-e-g-images-fonts-in-themes-and-components/62459
+@font-face {
+  font-family: IntelOneMonoRegular;
+  src: url($intelone-mono-font-family-regular) format('woff2')
+}
+
+// body {
+//     font-family: IntelOneMonoRegular;
+// }
+
+// .navigation-container,
+// .d-header,
+// .text-logo,
+// .link-top-line {
+//     font-size: 14px;
+//     font-family: IntelOneMonoRegular;
+// }
+
+// codeblocks
+.hljs {
+  font-size: 14px;
+  font-family: IntelOneMonoRegular;
+}
+/// <-- end: Intel One Mono for code blocks

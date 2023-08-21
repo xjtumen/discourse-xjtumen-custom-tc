@@ -8,6 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
+    "intelone-mono-font-family-regular": "assets/intelone-mono-font-family-regular.woff2"
   },
   "color_schemes": {
   },
