@@ -12,6 +12,17 @@
     display: block;
 }
 
+// auto center images
+.lightbox-wrapper {
+  display: block;
+  text-align: center;
+}
+p>img:not(.emoji){
+  display: block;
+  margin: 0 auto;
+}
+
+// move sidebar tags section to the bottom
 #sidebar-section-content-categories,
 #sidebar-section-content-tags {
     display: flex;
@@ -26,19 +37,19 @@
 //      font-size:8px;
 // }
 
-
+// make these links invisible to anonymous users
 // .anon {
 //   .学习资料-custom-header-links {
 //     display: none;
 //   }
 // }
-
 // .anon {
 //   .學資-custom-header-links {
 //     display: none;
 //   }
 // }
 
+// make the two words on the same line on mobile
 .學資-custom-header-links {
     text-align:  justify;
     overflow: hidden;
@@ -169,8 +180,9 @@ code.lines-decorator {
 
 /// --> end: Line numbering in code blocks
 
+
 /// --> start: Intel One Mono for code blocks
-// https://meta.discourse.org/t/include-assets-e-g-images-fonts-in-themes-and-components/62459
+// https://meta.discourse.org/t/create-and-share-a-font-theme-component/62462
 @font-face {
   font-family: IntelOneMonoRegular;
   src: url($intelone-mono-font-family-regular) format('woff2')
