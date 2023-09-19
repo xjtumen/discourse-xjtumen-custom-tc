@@ -1,29 +1,30 @@
-.d-header-icons { 
+.d-header-icons {
   display: flex;
 }
 
-.header-dropdown-toggle.hamburger-dropdown { 
+.header-dropdown-toggle.hamburger-dropdown {
   order: 1;
 }
-.header-dropdown-toggle.current-user { 
-  order: 2; 
-}
-.header-dropdown-toggle.search-dropdown { 
-  order: 3; 
+
+.header-dropdown-toggle.search-dropdown {
+  order: 3;
 }
 
 .header-dropdown-toggle.anonymouspost-button {
   order: 5;
 }
-.header-dropdown-toggle.ai-bot-button { 
-  order: 6; 
+.header-dropdown-toggle.ai-bot-button {
+  order: 6;
 }
-.header-dropdown-toggle.chat-header-icon { 
-  order: 7; 
+.header-dropdown-toggle.chat-header-icon {
+  order: 7;
 }
 
-.header-dropdown-toggle.playg-button { 
-  order: 8; 
+.header-dropdown-toggle.playg-button {
+  order: 8;
   display: none;
 }
 
+.header-dropdown-toggle.current-user {
+  order: 9;
+}
