@@ -6,10 +6,11 @@
 
 // do not show banner for logged-in users
 #banner {
-    display: none;
+  display: none;
 }
+
 .anon #banner {
-    display: block;
+  display: block;
 }
 
 // auto center images
@@ -17,7 +18,8 @@
   display: block;
   text-align: center;
 }
-p>img:not(.emoji){
+
+p > img:not(.emoji) {
   display: block;
   margin: 0 auto;
 }
@@ -25,11 +27,12 @@ p>img:not(.emoji){
 // move sidebar tags section to the bottom
 #sidebar-section-content-categories,
 #sidebar-section-content-tags {
-    display: flex;
-    flex-direction: column;
-    li:last-child {
-        order: -1;
-    }
+  display: flex;
+  flex-direction: column;
+
+  li:last-child {
+    order: -1;
+  }
 }
 
 
@@ -51,19 +54,18 @@ p>img:not(.emoji){
 
 // make the two words on the same line on mobile
 .學資-custom-header-links {
-    text-align:  justify;
-    overflow: hidden;
-    font-size: smaller;
-    white-space: nowrap;
+  text-align: justify;
+  overflow: hidden;
+  font-size: smaller;
+  white-space: nowrap;
 }
 
 .課評-custom-header-links {
-    text-align:  justify;
-    overflow: hidden;
-font-size: smaller;
-    white-space: nowrap;
+  text-align: justify;
+  overflow: hidden;
+  font-size: smaller;
+  white-space: nowrap;
 }
-
 
 
 /// --> start: Line numbering in code blocks
@@ -131,16 +133,15 @@ code.lines-decorator {
   }
 
   &.lines-shadow {
-    background-image:
-      // First two solid covers that scroll with the content, appearing
-      // in front of the shadows when no scrolling possible, matching
-      // background color (not perfect while scrolling the first pixels)
-      linear-gradient(to right, var(--lines-bgcolor), var(--lines-bgcolor)),
-      linear-gradient(to right, var(--lines-bgcolor), var(--lines-bgcolor)),
-      // ...and behind that two shadows at fixed positions, to indicate
-      // scrollable, hidden content if not covered
-      linear-gradient(to right, var(--lines-shadow-color), var(--lines-bgcolor)),
-      linear-gradient(to left, var(--lines-shadow-color), var(--lines-bgcolor));
+    background-image: // First two solid covers that scroll with the content, appearing
+            // in front of the shadows when no scrolling possible, matching
+            // background color (not perfect while scrolling the first pixels)
+            linear-gradient(to right, var(--lines-bgcolor), var(--lines-bgcolor)),
+            linear-gradient(to right, var(--lines-bgcolor), var(--lines-bgcolor)),
+              // ...and behind that two shadows at fixed positions, to indicate
+              // scrollable, hidden content if not covered
+            linear-gradient(to right, var(--lines-shadow-color), var(--lines-bgcolor)),
+            linear-gradient(to left, var(--lines-shadow-color), var(--lines-bgcolor));
 
     --shadow-left: 0;
 
@@ -205,4 +206,5 @@ code.lines-decorator {
   font-size: 14px;
   font-family: IntelOneMonoRegular;
 }
+
 /// <-- end: Intel One Mono for code blocks
