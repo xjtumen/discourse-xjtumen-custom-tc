@@ -1,7 +1,10 @@
 .d-header-icons { 
   display: flex;
 }
-
+.title {
+  display: flex;
+  justify-content: center;
+}
 .header-dropdown-toggle.hamburger-dropdown { 
   order: 1;
 }
