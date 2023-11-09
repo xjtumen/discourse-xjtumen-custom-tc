@@ -1,6 +1,87 @@
+// do not display discourse-ai's PM to bot icon on mobile
 .ai-bot-button {
   display: none
 }
+
+
+// translucent floating discourse-chatbot's talk-to-bot icon
+.chatbot-btn {
+  opacity: 0.3;
+}
+// change opacity on hover
+#chatbot-btn:hover {
+  width: 190px;
+  opacity: 0.9;
+}
+
+
+// left align hamburger menu icon
+// WARNING: this conflicts with discourse-custom-header-links TC
+.d-header {
+  display: grid;
+  grid:
+      ". . . . . . . ." auto
+      "left-menu logo extra-info header-buttons search chat anonymouspost right-menu" auto
+      ". . . . . . . ." auto
+      / auto 1fr auto auto auto auto auto auto;
+  grid-column-gap: 0.2em;
+  padding: 0 8px;
+  box-sizing: border-box;
+
+  & > .wrap {
+    &,
+    & .contents {
+      display: contents;
+    }
+  }
+
+  .panel {
+    &,
+    & > .d-header-icons {
+      display: contents;
+    }
+  }
+
+  .header-buttons {
+    grid-area: header-buttons;
+  }
+
+  .search-dropdown {
+    grid-area: search;
+  }
+
+  .chat-header-icon {
+    grid-area: chat;
+  }
+
+  .anonymouspost-button {
+    grid-area: anonymouspost;
+  }
+
+  .hamburger-dropdown {
+    grid-area: left-menu;
+  }
+
+  .current-user {
+    grid-area: right-menu;
+  }
+
+  .extra-info-wrapper {
+    grid-area: extra-info;
+    width: calc(100vw - 100px);
+  }
+
+  // some protection for text-only site titles
+  .title {
+    grid-area: logo;
+    @if ($center_logo == "true") {
+      margin: 0 auto;
+    }
+    max-width: unset;
+  }
+}
+
+
 
 //.logo-mobile {
 //    text-align: center;
@@ -10,52 +91,16 @@
 //}
 
 
-//.d-header {
-//    .contents {
-//        text-align: center;
-//    }
-//    .panel {
-//        float: none;
-//        position: absolute;
-//        display: inline-block !important;
-//        right: 0;
-//        text-align: initial;
-//    }
-//    .title {
-//        float: none;
-//        display: inline-block;
-//    }
-//    .extra-info-wrapper {
-//        display: inline-block;
-//        text-align: initial;
-//        transform: translateY(-5px);
-//
-//        .title-wrapper {
-//            width: 100%;
-//        }
-//        .topic-header-extra {
-//           position: absolute;
-//           top: 23px;
-//           margin-left: 65px !important;
-//        }
-//        .badge-wrapper.bullet {
-//            position: absolute;
-//            top: 25px;
-//        }
-//    }
-//}
-
 
 .d-header-icons {
   display: flex;
 }
 
 
-
+// these orders seem to be useless, as we have already specified them in preview grid block
 .header-dropdown-toggle.hamburger-dropdown {
   order: 1;
   justify-content: left;
-
 }
 
 .header-dropdown-toggle.search-dropdown {
