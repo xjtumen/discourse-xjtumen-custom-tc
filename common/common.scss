@@ -211,22 +211,22 @@ code.lines-decorator {
 }
 
 
-// Anonymous post Widget
-.anonymouspost-panel {
-  .panel-message {
-    &-type-warning {
-      background: var(--header_background);
-      padding: 1rem;
-      color: var(--primary);
-      font-weight: bold;
-      .d-icon {
-        color: var(--secondary);
-        font-size: 1.25rem;
-        margin-bottom: 0.25rem;
-      }
-    }
-  }
-}
+// // Anonymous post Widget
+// .anonymouspost-panel {
+//   .panel-message {
+//     &-type-warning {
+//       background: var(--header_background);
+//       padding: 1rem;
+//       color: var(--primary);
+//       font-weight: bold;
+//       .d-icon {
+//         color: var(--secondary);
+//         font-size: 1.25rem;
+//         margin-bottom: 0.25rem;
+//       }
+//     }
+//   }
+// }
 
 
 
