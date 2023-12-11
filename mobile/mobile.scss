@@ -128,3 +128,9 @@
 .header-dropdown-toggle.current-user {
   order: 10;
 }
+
+
+// no Dropdown Header on mobile
+.custom-header-links {
+  display: none;
+}
