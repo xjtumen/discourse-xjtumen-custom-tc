@@ -234,3 +234,12 @@ code.lines-decorator {
 // .anon .top-menu {
     // display: none;
 // }
+
+// adapt Header submenus to light/dark mode color
+.top-menu .menu-item {
+    color: var(--primary);
+}
+.top-menu {
+    background: var(--secondary);
+    // color: var(--secondary);
+}
