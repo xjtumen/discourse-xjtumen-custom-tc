@@ -84,6 +84,14 @@
     }
     max-width: unset;
   }
+
+  .home-logo-wrapper-outlet {
+    grid-area: logo;
+    @if ($center_logo == "true") {
+      margin: 0 auto;
+    }
+    max-width: unset;
+  }
 }
 
 
