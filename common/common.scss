@@ -243,3 +243,19 @@ code.lines-decorator {
     background: var(--secondary);
     // color: var(--secondary);
 }
+
+
+
+// temporary fix for https://github.com/discourse/discourse-steam-login
+@media (prefers-color-scheme: light) {
+    .btn-social.steam{
+        background: var(--secondary);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .btn-social.steam{
+        background: var(--primary);
+    }
+}
+
+
