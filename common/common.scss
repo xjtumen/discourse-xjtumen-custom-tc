@@ -229,33 +229,37 @@ code.lines-decorator {
 // }
 
 
-
 // disable-header-submenu-for-anonymous-user
 // .anon .top-menu {
-    // display: none;
+// display: none;
 // }
 
 // adapt Header submenus to light/dark mode color
-.top-menu .menu-item {
-    color: var(--primary);
-}
 .top-menu {
-    background: var(--secondary);
-    // color: var(--secondary);
+  .menu-item, .d-header-dropdown, .submenu-item, .d-dropdown-menu {
+    color: var(--primary);
+    background: var(--primary);
+  }
 }
 
+
+//.top-menu {
+//  background: var(--secondary);
+//   color: var(--secondary);
+//}
 
 
 // temporary fix for https://github.com/discourse/discourse-steam-login
 @media (prefers-color-scheme: light) {
-    .btn-social.steam{
-        background: var(--secondary);
-    }
+  .btn-social.steam {
+    background: var(--secondary);
+  }
 }
+
 @media (prefers-color-scheme: dark) {
-    .btn-social.steam{
-        background: var(--primary);
-    }
+  .btn-social.steam {
+    background: var(--primary);
+  }
 }
 
 
