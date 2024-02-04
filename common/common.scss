@@ -236,16 +236,35 @@ code.lines-decorator {
 
 // adapt Header submenus to light/dark mode color
 .top-menu {
-  .menu-item, .d-header-dropdown, .submenu-item, .d-dropdown-menu {
+  .menu-item, .d-header-dropdown {
     color: var(--primary);
     background: var(--secondary);
   }
+
+  .submenu-item, .d-dropdown-menu {
+    color: var(--primary);
+    background: var(--secondary);
+  }
+
+  .submenu-link {
+    color: var(--primary);
+  }
 }
-
-
+// for debug
 //.top-menu {
-//  background: var(--secondary);
-//   color: var(--secondary);
+//  .menu-item, .d-header-dropdown {
+//    color: red;
+//    background: green;
+//  }
+//
+//  .submenu-item, .d-dropdown-menu {
+//    color: mediumpurple;
+//    background: salmon;
+//  }
+//
+//  .submenu-link {
+//    color: orange;
+//  }
 //}
 
 
