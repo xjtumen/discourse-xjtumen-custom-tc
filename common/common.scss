@@ -236,12 +236,15 @@ code.lines-decorator {
 
 // adapt Header submenus to light/dark mode color
 .top-menu {
-  .menu-item, .d-header-dropdown, .submenu-item, .d-dropdown-menu {
+  .menu-item, .d-header-dropdown {
     color: var(--primary);
-    background: var(--secondary);
   }
-}
 
+  .submenu-link {
+    color: var(--primary);
+  }
+  background: var(--secondary);
+}
 
 // for debug:
 
