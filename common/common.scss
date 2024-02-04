@@ -239,7 +239,9 @@ code.lines-decorator {
   .menu-item, .d-header-dropdown {
     color: var(--primary);
   }
-
+  .submenu-item, .d-dropdown-menu {
+    background: var(--secondary);
+  }
   .submenu-link {
     color: var(--primary);
   }
@@ -247,7 +249,7 @@ code.lines-decorator {
 }
 
 // for debug:
-
+//
 //.top-menu {
 //  .menu-item, .d-header-dropdown {
 //    color: red;
