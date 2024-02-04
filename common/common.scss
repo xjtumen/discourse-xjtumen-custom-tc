@@ -238,19 +238,16 @@ code.lines-decorator {
 .top-menu {
   .menu-item, .d-header-dropdown {
     color: var(--primary);
-    background: var(--secondary);
-  }
-
-  .submenu-item, .d-dropdown-menu {
-    color: var(--primary);
-    background: var(--secondary);
   }
 
   .submenu-link {
     color: var(--primary);
   }
+  background: var(--secondary);
 }
-// for debug
+
+// for debug:
+
 //.top-menu {
 //  .menu-item, .d-header-dropdown {
 //    color: red;
@@ -265,6 +262,9 @@ code.lines-decorator {
 //  .submenu-link {
 //    color: orange;
 //  }
+//
+//  background: deeppink;
+//
 //}
 
 
