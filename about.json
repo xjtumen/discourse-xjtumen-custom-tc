@@ -8,7 +8,8 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
-    "intelone-mono-font-family-regular": "assets/intelone-mono-font-family-regular.woff2"
+    "intelone-mono-font-family-regular": "assets/intelone-mono-font-family-regular.woff2",
+    "icons-sprite": "/assets/custom-fab-element.svg"
   },
   "color_schemes": {
   },
