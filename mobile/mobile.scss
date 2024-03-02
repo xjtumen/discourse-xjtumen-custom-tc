@@ -2,9 +2,6 @@
 .ai-bot-button {
   display: none
 }
-  //.chat-header-icon {
-  //  display: none
-  //}
 
 .btn-custom-header-dropdown-mobile {
   display: none
@@ -50,18 +47,16 @@
     }
   }
 
-  .header-buttons {
-    grid-area: header-buttons;
-  }
+  //.header-buttons {
+  //  grid-area: header-buttons;
+  //}
 
   .search-dropdown {
     grid-area: search;
   }
 
-  .wrapper {
-    .chat-header-icon {
+  .wrapper .chat-header-icon {
       grid-area: chat;
-    }
   }
 
   .anonymouspost-button {
