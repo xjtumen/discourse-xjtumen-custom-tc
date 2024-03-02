@@ -47,9 +47,9 @@
     }
   }
 
-  //.header-buttons {
-  //  grid-area: header-buttons;
-  //}
+  .header-buttons {
+    grid-area: header-buttons;
+  }
 
   .search-dropdown {
     grid-area: search;
@@ -57,6 +57,7 @@
 
   .wrapper .chat-header-icon {
       grid-area: chat;
+    display: none;
   }
 
   .anonymouspost-button {
