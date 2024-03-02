@@ -58,8 +58,10 @@
     grid-area: search;
   }
 
-  .wrapper .chat-header-icon {
-    grid-area: chat;
+  .wrapper {
+    .chat-header-icon {
+      grid-area: chat;
+    }
   }
 
   .anonymouspost-button {
