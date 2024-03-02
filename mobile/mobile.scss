@@ -2,9 +2,9 @@
 .ai-bot-button {
   display: none
 }
-  .chat-header-icon {
-    display: none
-  }
+  //.chat-header-icon {
+  //  display: none
+  //}
 
 .btn-custom-header-dropdown-mobile {
   display: none
@@ -114,36 +114,36 @@
 
 
 // these orders seem to be useless, as we have already specified them in preview grid block
-.header-dropdown-toggle.hamburger-dropdown {
-  order: 1;
-  justify-content: left;
-}
-
-.header-dropdown-toggle.search-dropdown {
-  order: 3;
-}
-
-
-.header-dropdown-toggle.ai-bot-button {
-  order: 6;
-}
-
-.header-dropdown-toggle.chat-header-icon {
-  order: 7;
-}
-
-.header-dropdown-toggle.playg-button {
-  order: 8;
-  display: none;
-}
-
-.header-dropdown-toggle.anonymouspost-button {
-  order: 9;
-}
-
-.header-dropdown-toggle.current-user {
-  order: 10;
-}
+//.header-dropdown-toggle.hamburger-dropdown {
+//  order: 1;
+//  justify-content: left;
+//}
+//
+//.header-dropdown-toggle.search-dropdown {
+//  order: 3;
+//}
+//
+//
+//.header-dropdown-toggle.ai-bot-button {
+//  order: 6;
+//}
+//
+//.header-dropdown-toggle.chat-header-icon {
+//  order: 7;
+//}
+//
+//.header-dropdown-toggle.playg-button {
+//  order: 8;
+//  display: none;
+//}
+//
+//.header-dropdown-toggle.anonymouspost-button {
+//  order: 9;
+//}
+//
+//.header-dropdown-toggle.current-user {
+//  order: 10;
+//}
 
 
 // no Dropdown Header on mobile
