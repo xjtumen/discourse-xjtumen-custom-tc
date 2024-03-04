@@ -2,7 +2,10 @@
 .ai-bot-button {
   display: none
 }
-
+// no Dropdown Header on mobile
+.custom-header-links {
+  display: none;
+}
 .btn-custom-header-dropdown-mobile {
   display: none
 }
@@ -107,9 +110,9 @@
 
 
 
-.d-header-icons {
-  display: flex;
-}
+//.d-header-icons {
+//  display: flex;
+//}
 
 
 // these orders seem to be useless, as we have already specified them in preview grid block
@@ -145,7 +148,3 @@
 //}
 
 
-// no Dropdown Header on mobile
-.custom-header-links {
-  display: none;
-}
