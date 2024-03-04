@@ -22,78 +22,79 @@
 
 // left align hamburger menu icon
 // WARNING: this conflicts with discourse-custom-header-links TC
-.d-header {
-  display: grid;
-  grid:
-      ". . . . . . . ." auto
-      "left-menu logo extra-info header-buttons search chat anonymouspost right-menu" auto
-      ". . . . . . . ." auto
-      / auto 1fr auto auto auto auto auto auto;
-  grid-column-gap: 0.2em;
-  padding: 0 8px;
-  box-sizing: border-box;
-
-  & > .wrap {
-    &,
-    & .contents {
-      display: contents;
-    }
-  }
-
-  .panel {
-    &,
-    & > .d-header-icons {
-      display: contents;
-    }
-  }
-
-  .header-buttons {
-    grid-area: header-buttons;
-  }
-
-  .search-dropdown {
-    grid-area: search;
-  }
-
-  .wrapper .chat-header-icon {
-    grid-area: chat;
-    //display: none;
-  }
-
-  .anonymouspost-button {
-    grid-area: anonymouspost;
-  }
-
-  .hamburger-dropdown {
-    grid-area: left-menu;
-  }
-
-  .current-user {
-    grid-area: right-menu;
-  }
-
-  .extra-info-wrapper {
-    grid-area: extra-info;
-    width: calc(100vw - 100px);
-  }
-
-  // some protection for text-only site titles
-  .title {
-    grid-area: logo;
-    @if ($center_logo == "true") {
-      margin: 0 auto;
-    }
-    max-width: unset;
-  }
-
-  .home-logo-wrapper-outlet {
-    grid-area: logo;
-    @if ($center_logo == "true") {
-      margin: 0 auto;
-    }
-    max-width: unset;
-  }
-}
+//.d-header {
+//  display: grid;
+//  grid:
+//      ". . . . . . . ." auto
+//      "left-menu logo extra-info header-buttons search chat anonymouspost right-menu" auto
+//      ". . . . . . . ." auto
+//      / auto 1fr auto auto auto auto auto auto;
+//  grid-column-gap: 0.2em;
+//  padding: 0 8px;
+//  box-sizing: border-box;
+//
+//  & > .wrap {
+//    &,
+//    & .contents {
+//      display: contents;
+//    }
+//  }
+//
+//  .panel {
+//    &,
+//    & > .d-header-icons {
+//      display: contents;
+//    }
+//  }
+//
+//  .header-buttons {
+//    grid-area: header-buttons;
+//  }
+//
+//  .search-dropdown {
+//    grid-area: search;
+//  }
+//
+//  .wrapper .chat-header-icon {
+//    html.mobile-view.not-mobile-device.text-size-normal.no-touch.discourse-no-touch.keyboard-visible body.chat-enabled.staff.navigation-topics.docked section#main.ember-application div#ember3.discourse-root.ember-view div#ember5.d-header-wrap.ember-view header.d-header div.wrap div.contents div.panel ul.icons.d-header-icons div.wrapper li.header-dropdown-toggle.chat-header-icon a.icon.btn-flat
+//    grid-area: chat;
+//    //display: none;
+//  }
+//
+//  .anonymouspost-button {
+//    grid-area: anonymouspost;
+//  }
+//
+//  .hamburger-dropdown {
+//    grid-area: left-menu;
+//  }
+//
+//  .current-user {
+//    grid-area: right-menu;
+//  }
+//
+//  .extra-info-wrapper {
+//    grid-area: extra-info;
+//    width: calc(100vw - 100px);
+//  }
+//
+//  // some protection for text-only site titles
+//  .title {
+//    grid-area: logo;
+//    @if ($center_logo == "true") {
+//      margin: 0 auto;
+//    }
+//    max-width: unset;
+//  }
+//
+//  .home-logo-wrapper-outlet {
+//    grid-area: logo;
+//    @if ($center_logo == "true") {
+//      margin: 0 auto;
+//    }
+//    max-width: unset;
+//  }
+//}
 
 
 
