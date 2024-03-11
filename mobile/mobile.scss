@@ -2,6 +2,9 @@
 .ai-bot-button {
   display: none
 }
+html.desktop-view.not-mobile-device.text-size-normal.no-touch.discourse-no-touch.whos-online-ring.admin-area.composer-open body.chat-enabled.staff.has-sidebar-page.docked.admin-interface.ai-bot-chat section#main.ember-application div#ember3.discourse-root.ember-view div#ember6.d-header-wrap.drop-down-mode.ember-view header.d-header div.wrap div.contents div.panel ul.icons.d-header-icons div.wrapper li button.btn.no-text.btn-icon.ai-bot-button.icon.btn-flat {
+  display: none;
+}
 // no Dropdown Header on mobile
 .custom-header-links {
   display: none;
