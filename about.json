@@ -3,7 +3,7 @@
   "version": 0.1,
   "component": true,
   "license": "MIT",
-  "authors": ["xjtu-men"],
+  "authors": ["xjtumen"],
   "theme_version": null,
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
@@ -15,6 +15,6 @@
   },
   "modifiers": {
   },
-  "about_url": "https://github.com/xjtu-men/discourse-xjtumen-custom-tc",
+  "about_url": "https://github.com/xjtumen/discourse-xjtumen-custom-tc",
   "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
 }
