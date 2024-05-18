@@ -1,3 +1,10 @@
+// hide reply to OP button for course category
+.category-course{
+  .extra-buttons {
+      display: none;
+  }
+}
+
 // do not show banner for logged-in users
 
 // #banner {
