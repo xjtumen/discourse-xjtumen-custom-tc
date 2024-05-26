@@ -8,6 +8,16 @@ span.poster-icon.user-title {
   .extra-buttons {
       display: none;
   }
+    // no need to hide the reply button at the bottom: afterall we don't enforce template
+    //.topic-footer-main-buttons {
+     // .btn-primary.create {
+      //display: none;
+      //}
+  //}
+}
+
+.category-course{
+  
 }
 
 // remove banner like `It’s been a while since we’ve seen course_review_bot — their last post was 1 year ago.`
