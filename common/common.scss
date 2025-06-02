@@ -1,3 +1,14 @@
+@import "common/foundation/variables";
+
+img.avatar {
+  border: 1px solid dark-light-diff($primary, $secondary, 90%, -75%);
+}
+.topic-list .posters {
+  width: 155px;
+  min-width: 155px;
+}
+
+
 // used in conjunction with staff-alias plugin:
 span.poster-icon.user-title {
     display: none;
